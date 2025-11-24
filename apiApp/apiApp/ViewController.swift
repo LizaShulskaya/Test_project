@@ -16,14 +16,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let age = UserDefaults.standard.object(forKey: "a")
-        print(age)
         view.backgroundColor = .white
         
         title = "Posts"
     
-        configureTableView()
         configureNavBar()
+        configureTableView()
         loadPosts()
     }
     
